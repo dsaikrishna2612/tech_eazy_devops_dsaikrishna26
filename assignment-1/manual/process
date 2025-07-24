@@ -1,0 +1,36 @@
+Login in to AWS account
+Switch to EC2 Dashboard
+Create an EC2 with a required AMI, Instance type and Keypair
+Enable SSH-22 , HTTP-80 , Custom TCP-8080 in the inbound rules of security group
+create an EC2 and connect to it 
+
+-----after connecting to an ec2-----
+sudo su -
+#install java-21
+sudo dnf install java-21-amazon-corretto -y
+#check version
+java -version
+#install maven
+yum install maven -y
+#check version
+mvn -version
+#install git
+yum install git -y
+#clone the project repository
+git clone https://github.com/dsk2612-git/test-repo-for-devops.git
+#switch to project directory
+cd test-repo-for-devops
+#clean the repo
+mvn clean
+#test the code
+mvn test
+#build the code
+mvn package
+#run the package
+java -jar target/hellomvc-0.0.1-SNAPSHOT.jar
+
+
+nohup java -jar target/hellomvc-0.0.1-SNAPSHOT.jar &
+
+
+curl http://<EC2-public-IP>:8080/hello
