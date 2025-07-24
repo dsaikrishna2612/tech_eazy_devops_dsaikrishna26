@@ -1,0 +1,8 @@
+# dev_config
+
+AMI_ID=ami-0abcdef1234567890       # Example: Amazon Linux AMI
+INSTANCE_TYPE=t2.micro
+KEY_NAME=my-key                    # Name of your EC2 key pair
+#KEY_PATH=/path/to/my-key.pem       # Local path to your key file
+SG_ID=sg-0123456789abcdef0         # Security Group ID allowing SSH (22) & HTTP (80)
+SUBNET_ID=subnet-0123456789abcdef0 # Subnet ID in your VPC
