@@ -1,8 +1,8 @@
 # prod_config
 
-AMI_ID=ami-0abcdef1234567890
-INSTANCE_TYPE=t2.medium
-KEY_NAME=my-key
-KEY_PATH=/path/to/my-key.pem
-SG_ID=sg-0123456789abcdef0
-SUBNET_ID=subnet-0123456789abcdef0
+AMI_ID=ami-0b6acaa45fec15278
+INSTANCE_TYPE=t3.medium
+KEY_NAME=intern
+#KEY_PATH=/path/to/my-key.pem
+#SG_ID=sg-0123456789abcdef0
+#SUBNET_ID=subnet-0123456789abcdef0
